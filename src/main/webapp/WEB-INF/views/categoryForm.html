@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>새 카테고리 등록 - categoryForm</title>
 </head>
 <body>
 <!-- categoryForm.html : th:object + th:field + th:errors 패턴 -->
@@ -12,5 +12,12 @@
     <!-- th:errors: BindingResult 오류(중복/공백) 메시지 자동 표시 -->
     <span th:errors="*{name}" style="color:red"></span>
     <button type="submit">등록</button>
+</form>
+
+
+<hr>
+<footer style="text-align: center; color: gray;">
+    <p th:text="${'실습 수행: ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss') + ' | 학번: 2271055 | 성명: 조희연'}"></p>
+</footer>
 </body>
 </html>
