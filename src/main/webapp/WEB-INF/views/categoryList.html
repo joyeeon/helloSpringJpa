@@ -43,7 +43,7 @@
             <td>
                 <!-- th:action에서 경로 변수 (id=${cat.id}) 바인딩 방법 -->
                 <form th:action="@{/categories/{id}/delete(id=${cat.id})}" method="post">
-                    <button type="submit">삭제</button>
+                    <button class="btn" type="submit">삭제</button>
                 </form>
             </td>
         </tr>
